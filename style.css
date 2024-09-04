@@ -1,0 +1,211 @@
+/* styles.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #111;
+    color: #eee;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 36px;
+    color: #f05f40;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+
+h3::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #f05f40;
+    margin: 20px auto 0;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    color: #f05f40;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: #eee;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f05f40;
+}
+
+.hero-section {
+    height: 100vh;
+    background: url('bgrnd.jpeg') center center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #f05f40;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+.services-section, .portfolio-section, .about-section {
+    padding: 80px 0;
+    background-color: #222;
+    color: #eee;
+}
+
+.service-item {
+    background-color: #333;
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-overlay h4 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.portfolio-overlay a {
+    font-size: 16px;
+    color: #f05f40;
+}
+
+footer {
+    padding: 60px 0;
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+}
+
+footer h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    color: #f05f40;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+footer .contact-info {
+    margin-top: 20px;
+}
+
+footer .contact-info p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+footer .contact-info i {
+    color: #f05f40;
+    margin-right: 10px;
+}
